@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEGRATING SELECT BOX</title>
+</head>
+<style>
+    body {
+      background-color: #7ea39b;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style:oblique;
+      color: rgb(0, 0, 0);
+      text-shadow: 0 0 5px rgb(165, 163, 163);
+    }
+    .js-example-basic-multiple {
+      width: 20%;
+    }
+    option, select {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    label {
+      margin: 10px 0px;
+      margin-top: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style:oblique;
+      color: rgb(3, 3, 3);
+      font-size: larger;
+      font-weight: bold;
+
+    }
+    form {
+      background-color: whitesmoke;
+      width: 70%;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+<body>
+    <h1>Choose Your Favorite</h1>
+    <form>
+    <fieldset style="background: #ffffff; border: 2px solid #020202; border-radius: 10px;">
+        <legend>Group Box</legend>
+
+    <label for="gender">Foods</label> <br>
+    <select id="gender" class="js-example-basic-multiple">
+        <option value="">-- Select Foods --</option>
+        <option value="male">Adobo</option>
+        <option value="female">Sinigang</option>
+        <option value="other">Sisig</option>
+    </select><br>
+
+        <label for="address">Social Media</label> <br>
+        <select id="address" class="js-example-basic-multiple">
+            <option value="">-- Select Social Media--</option>
+            <option value="cavitecity">Facebook</option>
+            <option value="noveleta">Instagram</option>
+            <option value="kawit">Twitter</option>
+            <option value="rosario">Whatsapp</option>
+            <option value="bacoor">YouTube</option>
+        </select>
+        <br>
+        <br>
+
+    </fieldset>
+    </form>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+      </script>
+
+</body>
+</html>
